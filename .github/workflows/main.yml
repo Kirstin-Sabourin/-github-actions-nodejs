@@ -1,5 +1,5 @@
 name: Run Node.js Script
-on:
+on: ~/week6lab/github-actions-nodejs
   push:
     branches:
       - main
