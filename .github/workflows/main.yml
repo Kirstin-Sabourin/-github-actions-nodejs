@@ -1,10 +1,12 @@
-name: Run Node.js Script
+name: Run node.js Script
+
 on:
   push:
     branches:
       - main
+
 jobs:
-  run-script:
+  run-script: 
     runs-on: ubuntu-latest
 
     steps:
@@ -18,10 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./week6lab/github-actions-nodejs 
-
 
       - name: Run Node.js Script
-        run: |
-          cd week6lab/github-actions-nodejs
-          node system-info.js
+        run: node system-info.js
+
