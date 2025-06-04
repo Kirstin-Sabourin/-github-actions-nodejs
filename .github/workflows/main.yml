@@ -17,9 +17,9 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: |
-          cd week6lab/github-actions-nodejs
-          npm install
+        run: npm install
+        working-directory: ./week6lab/github-actions-nodejs 
+
 
       - name: Run Node.js Script
         run: |
