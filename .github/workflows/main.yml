@@ -18,7 +18,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd week6lab/github-actions-nodejs
           npm install
 
       - name: Run Node.js Script
