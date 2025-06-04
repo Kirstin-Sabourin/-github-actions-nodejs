@@ -18,7 +18,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          mkdir -p week6lab/github-actions-nodejs
           cd week6lab/github-actions-nodejs
           npm install
 
